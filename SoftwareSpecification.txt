@@ -1,2 +1,21 @@
+Software Specifications(Due Mon, 2/6):
 
+
+
+Requirements elicitation and analysis:
+  -
+
+Requirements specification:
+  -
+  
+Requirements validation:
+  -
+
+System descriptions:
+  -
+
+User and System requirements:
+  -
+
+Requirements document:
 
