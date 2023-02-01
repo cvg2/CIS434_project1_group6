@@ -1,4 +1,4 @@
-# repository name: assignment1-group6
+# repository name: project1-group6
 
 Memebers & Username:
 
