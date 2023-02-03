@@ -1,0 +1,46 @@
+PROJECT 1
+
+Expense Tracker Web Application
+
+Project Notes:
+web application using react
+
+the user can use that application for tracking their expenses and acounnts
+
+use can add new transaction by writing the name and including whether its + - cashflow
+
+the program will do the math and display the current balance, and the transactions will show up in the history section
+
+initiallly should display 0.00 in balance and income/expense, history should be blank
+
+for adding new transaction you can leave descripion in text box and then amount in amount box
+
+warning message/ transaction denied if you have expense but not enough money
+
+positive transactions are green and negative transactions are red 
+
+discuss plan in class on Feb 6th
+
+Feb 13th - update plan and provide system delivery plan
+
+Feb 20th - Discussion of any issues
+
+March 6th will be demonstration
+
+application should hold data even after closing app
+
+
+Frontend Technologies:
+  REACT JavaScript
+  HTML
+  CSS
+  
+Database: 
+  SQL
+  FIREBASE? - For maintainger a server
+  
+Tasks:
+  Everyone: Familiarize yourselves with React, HTML, CSS
+  Discuss how to maintain a database
+  Update each other after some research
+  
