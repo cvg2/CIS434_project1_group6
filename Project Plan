@@ -52,14 +52,16 @@ Software Specifications(Due Mon, 2/6):
 
 
 Requirements elicitation and analysis:
-  -User inputs cash flows, program returns:
+    -User inputs cash flows, program returns:
     -A history of cash flows(marked as income or expenses
     -The current total
     -Total income
     -Total expenses
+    -Keep a log of expenses even after app has been turned off and on.
 
 Requirements specification:
-  -
+    -
+    -History of cash flows should mark income with green
   
 Requirements validation:
   -
