@@ -1,0 +1,45 @@
+body {
+  background-color: #409cd1;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.Balance {
+  background-color: #f0f8ff;
+}
+
+.History {
+  background-color: #b4ff6e;
+}
+
+.Transaction {
+  background-color: #ff1493;
+}
+
+.Transaction:nth-child(even) {
+  background-color: #bd317c;
+} 
+
+.Transaction p {
+  margin: 0px;
+}
+
+.UserInput {
+  background-color: #ff7f50;
+}
+
+.UserInput button {
+  background-color: #61c900;
+  width: 100%;
+}
+
+.UserInputCont {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.UserInputCont input {
+  background-color: #ffe9f5;
+  font-size: 16pt;
+  text-align: center;
+}
