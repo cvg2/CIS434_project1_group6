@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CIS434_project1_group6/static/css/main.a02c7de5.css",
+    "main.js": "/CIS434_project1_group6/static/js/main.5b916784.js",
+    "index.html": "/CIS434_project1_group6/index.html",
+    "main.a02c7de5.css.map": "/CIS434_project1_group6/static/css/main.a02c7de5.css.map",
+    "main.5b916784.js.map": "/CIS434_project1_group6/static/js/main.5b916784.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a02c7de5.css",
+    "static/js/main.5b916784.js"
+  ]
+}
