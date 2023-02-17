@@ -36,3 +36,52 @@ console.log(`[DATABASE]: CONNECTION ESTABLISHED`);
 
 //Assign userId initially to 'null'
 var userId = null;
+
+//Class used to interact with user's data in the Firebase Realtime Database (RTDB)
+class Database {
+
+  //Return the data of a specific user
+  async getData() {
+    const dbRef = ref(db);
+
+    const data = await get(child(dbRef, `users/${userId}/`));
+
+    console.log(`[DATABASE]: DATA RETRIEVED: ${data.val()}`);
+    return data.val();
+  }
+
+  //Push new user transactions to RTDB. Also returns the transaction ID.
+  updateTxns(text, amount) {
+
+    //Get reference to user's transactions
+    const txnRef = ref(db, `users/${userId}/transactions`);
+
+    //Get transactions from RTDB, append new transaction to it, update it to RTDB
+    const newTxnRef = push(txnRef);
+    set(newTxnRef, {
+      amount: +amount,
+      text: text,
+    })
+
+    console.log(`[DATABASE]: DATA CHANGED`);
+    return newTxnRef.key;
+  }
+
+  //Update user's balance
+  updateBalance(balance, income, expense) {
+
+    //Get reference to user's entry in RTDB
+    const userRef = ref(db, `users/${userId}`);
+
+    //Prepare updates
+    const newBalance = {
+      balance: balance,
+      income: income,
+      expense: expense
+    };
+
+    update(userRef, newBalance);
+  }
+}
+
+export default Database;
