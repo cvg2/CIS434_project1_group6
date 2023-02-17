@@ -1,0 +1,30 @@
+{
+    "users": {
+        "0000": {
+            "balance": -100,
+            "income": 0,
+            "expense": -100,
+            "transactions": {
+                "0": {
+                    "amount": -100,
+                    "text": "bills"
+                }
+            }
+        },
+        "3158": {
+            "balance": 500,
+            "income": 800,
+            "expense": 300,
+            "transactions": {
+                "0": {
+                    "amount": -300,
+                    "text": "bills"
+                },
+                "1": {
+                    "amount": 800,
+                    "text": "salary"
+                }
+            }
+        }
+    }
+}
