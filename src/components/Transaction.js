@@ -5,11 +5,12 @@ class Transaction extends Component {
         const {text, amount} = this.props.data;
 
         return (
-            <div className="Transaction">
-                <p>
-                    ID: {this.props.tid}, Text: {text}, Amount: {amount}
-                </p>
-            </div>
+            <tr>
+                <td>{text}</td>
+                <td className="alignRight">{amount.toLocaleString('en-US', {style: 'currency', currency: 'USD',
+                            minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </td>
+             </tr>
         );
     }
 }
