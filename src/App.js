@@ -68,15 +68,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>Expense Tracker by Group 6</h1>
-        <Balanace 
-          balance={this.state.balance} 
-          income={this.state.income} 
-          expense={this.state.expense}
-        />
-        <History transactions={this.state.transactions}/>
-        <UserInput app={this} addTxn={this.addTxn}/>
+      <div className="container p-4">
+        <h1>Expense Tracker</h1>
+        <div className="row">
+          <Balanace 
+              balance={this.state.balance} 
+              income={this.state.income} 
+              expense={this.state.expense}
+            />        
+          <UserInput app={this} addTxn={this.addTxn}/>
+          <History transactions={this.state.transactions}/>
+        </div>
       </div>
     );
   }
