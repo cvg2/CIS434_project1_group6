@@ -3,7 +3,7 @@ import Database from './firebasedb';
 import './App.css';
 
 //Import of components
-import Balanace from './components/Balance'
+import Balance from './components/Balance'
 import History from './components/History';
 import UserInput from './components/UserInput';
 
@@ -71,7 +71,7 @@ class App extends Component {
       <div className="container p-4">
         <h1>Expense Tracker</h1>
         <div className="row">
-          <Balanace 
+          <Balance 
               balance={this.state.balance} 
               income={this.state.income} 
               expense={this.state.expense}
