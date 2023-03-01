@@ -1,21 +1,34 @@
 Software Specifications(Due Mon, 2/6):
-
+  -Generally this just means a description of the specifics of what will need to be done to make the software. Below are Software Specification's 'subsections'.
 
 
 Requirements elicitation and analysis:
-  -
+    -User inputs cash flows, program returns:
+    -A history of cash flows(marked as income or expenses
+    -The current total
+    -Total income
+    -Total expenses
+    -Keep a log of expenses even after app has been turned off and on.
 
 Requirements specification:
-  -
+    -Display should closely resemble image shown in class(Should acquire a copy of image for reference while working on project).
+    -History of cash flows should mark income with green
   
 Requirements validation:
-  -
+  -To validate that the requirements are met we should meet with the consumer of the product (i.e Essa) and get their approval on the execution of all of the aforementioned requirements.
 
 System descriptions:
-  -
+  -Use HTML as a base with Css to format to Essa's expectations. 
+  -Use React to add the functionality(buttons, non-static displays, etc).
+  -For the 'transaction history' requirement SQL can be used to store a database of past transactions, which can then communicate with the web app to display them.
 
 User and System requirements:
-  -
+  -It is unclear what exactly Essa's expectations are here atm. Does he just need us to have a single working example on one of our own computers, does it need to be easily transferable to his computer, or others, does it need to be mobile compatible, etc.
+    -We should meet with Essa to further discuss his expectations in this aspect.
+    -I'm imagining the only bit that may be significantly difficult to extend beyond just one of our computers would be the SQL database of past transactions. Since that database would likely have to be stored on one of our computers which could then have to communicate to whichever device the web app is being accessed from.(albeit my knowledge of SQL is still small atm, so this might end up being a non-problem).
 
 Requirements document:
+  -As far as  I understand it all the info that would be needed for a Requirements document is all this Software specification info on here. We should should probably make a copy of a word doc or something with this info so we can have the info centralized and summarized better. There are templates for 'Requirements Documents' online we could use to make this relatively easy.
+  -We should probably have this more clean and easy to read document atleast started by tomorrow to show Essa what to expect.  
+
 
