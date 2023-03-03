@@ -6,7 +6,7 @@ import {
 } from "firebase/app";
 
 import {
-  getDatabase, ref, child, get, set, push, update
+  getDatabase, ref, child, get, set, push, update, remove
 } from "firebase/database";
 
 const firebaseConfig = {
@@ -138,6 +138,17 @@ class Database {
     };
 
     update(userRef, newBalance);
+  }
+  
+  //Remove a transaction from user's transaction list with given transaction ID
+  removeTxn(tid) {
+
+    //Get reference to transaction corresponding to provided ID
+    const txnRef = ref(db, `users/${userId}/transactions/${tid}/`);
+
+    //Remove transaction from the RTDB
+    remove(txnRef);
+    console.log(`[DATABASE]: DATA CHANGED`);
   }
 }
 
