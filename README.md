@@ -13,3 +13,5 @@ Sky - SkyThornsberry
 Carmen - cvg2
   
 Michael - MPMoca
+
+Firebase RTDB Link: https://console.firebase.google.com/u/0/project/cis-434-project-1/database/cis-434-project-1-default-rtdb/data
