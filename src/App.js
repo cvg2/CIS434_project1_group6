@@ -25,8 +25,12 @@ class App extends Component {
 
   //Add data from RTDB to state and rerender components
   componentDidMount() {
-    this.db.getData().then((data) => {
-      this.setState(data);
+    
+    //Get user ID, then get user's data from RTDB
+    this.db.returnUserId().then(() => {
+      this.db.getData().then((data) => {
+        this.setState(data);
+      });
     });
   }
 
