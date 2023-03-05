@@ -16,7 +16,8 @@ class History extends Component {
                     <tbody>
                         {Object.keys(this.props.transactions).map((key) => {
                             return (
-                                <Transaction key={key} tid={key} data={this.props.transactions[key]}
+                                <Transaction app={this.props.app} removeTxn={this.props.removeTxn}
+                                    key={key} tid={key} data={this.props.transactions[key]}
                                     className={this.props.transactions[key].amount >= 0 ? "positiveTxn" : "negativeTxn"}/>
                             );
                         })}
