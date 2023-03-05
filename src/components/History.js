@@ -12,11 +12,12 @@ class History extends Component {
                 <hr></hr>
             </h4>
             <div className="container"> 
-                <table className="table table-bordeless">
+                <table className="table table-borderless">
                     <tbody>
                         {Object.keys(this.props.transactions).map((key) => {
                             return (
-                                <Transaction key={key} tid={key} data={this.props.transactions[key]}/>
+                                <Transaction key={key} tid={key} data={this.props.transactions[key]}
+                                    className={this.props.transactions[key].amount >= 0 ? "positiveTxn" : "negativeTxn"}/>
                             );
                         })}
                     </tbody>
