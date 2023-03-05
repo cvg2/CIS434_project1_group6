@@ -119,7 +119,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container p-4">
         <h1>Expense Tracker by Group 6</h1>
         <Balanace 
           balance={this.state.balance} 
