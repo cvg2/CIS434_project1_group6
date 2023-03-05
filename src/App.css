@@ -1,1 +1,36 @@
+.green {
+  color: green;
+}
 
+.alignRight {
+  text-align: right;
+}
+
+.transaction {
+  border: 1px;
+  border-right: 5px;
+  border-style: solid;
+  border-color: #d4d4d4;
+}
+
+.transaction:hover {
+  background-color: #e9e9e9;
+}
+
+.delButton button {
+  border-radius: 5px;
+  border: 0px;
+  background-color: inherit;
+}
+
+.delButton button:hover  {
+  background-color: #ff0000;
+}
+
+.positiveTxn {
+  border-right-color: #008000;
+}
+
+.negativeTxn {
+  border-right-color: #ff0000;
+}
