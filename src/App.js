@@ -36,6 +36,7 @@ class App extends Component {
 
   //Add new transactions to RTDB and webpage
   addTxn(txn) {
+    txn.amount = (+txn.amount).toFixed(2);
 
     //Guard condition for invalid entries (empty fields, non-numbers)
     if (txn.text.length == 0 || (isNaN(txn.amount) || txn.amount.length == 0) ) {
@@ -46,9 +47,9 @@ class App extends Component {
     
    
     //Prepare new balance entries
-    const newBalance = this.state.balance + +(txn.amount);
-    const newIncome = this.state.income + (+(txn.amount) > 0 ? +(txn.amount) : 0);
-    const newExpense = this.state.expense + (+(txn.amount) < 0 ? +(txn.amount) : 0);
+    const newBalance = +(+this.state.balance + +txn.amount).toFixed(2);
+    const newIncome = +(+this.state.income + (+txn.amount > 0 ? +txn.amount : 0)).toFixed(2);
+    const newExpense = +(+this.state.expense + (+txn.amount < 0 ? +txn.amount : 0)).toFixed(2);
 
     //Guard against transactions that will cause balance to go negative
     if (newBalance < 0) {
@@ -87,9 +88,9 @@ class App extends Component {
     const txn = newTxns[tid];
 
     //Prepare new balance entries
-    const newBalance = this.state.balance - +(txn.amount);
-    const newIncome = this.state.income - (+(txn.amount) > 0 ? +(txn.amount) : 0);
-    const newExpense = this.state.expense - (+(txn.amount) < 0 ? +(txn.amount) : 0);
+    const newBalance = +(+this.state.balance - +txn.amount).toFixed(2);
+    const newIncome = +(this.state.income - (+txn.amount > 0 ? +txn.amount : 0)).toFixed(2);
+    const newExpense = +(+this.state.expense - (+txn.amount < 0 ? +txn.amount : 0)).toFixed(2);
 
     //Guard against remove requests that will cause balance to go negative
     if (newBalance < 0) {
